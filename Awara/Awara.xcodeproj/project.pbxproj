@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3E3E45526FE270D0048739C /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3E45426FE270D0048739C /* CardModel.swift */; };
+		F3E3E45726FE29320048739C /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3E45626FE29320048739C /* CardData.swift */; };
+		F3E3E45926FE31C10048739C /* sound-chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3E3E45826FE31C10048739C /* sound-chime.mp3 */; };
+		F3E3E45B26FE31F10048739C /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3E45A26FE31F10048739C /* PlaySound.swift */; };
 		F3E4531B26FD17C2008EE211 /* AwaraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E4531A26FD17C2008EE211 /* AwaraApp.swift */; };
 		F3E4531D26FD17C2008EE211 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E4531C26FD17C2008EE211 /* ContentView.swift */; };
 		F3E4531F26FD17C3008EE211 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E4531E26FD17C3008EE211 /* Assets.xcassets */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F3E3E45426FE270D0048739C /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		F3E3E45626FE29320048739C /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
+		F3E3E45826FE31C10048739C /* sound-chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-chime.mp3"; sourceTree = "<group>"; };
+		F3E3E45A26FE31F10048739C /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		F3E4531726FD17C2008EE211 /* Awara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Awara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E4531A26FD17C2008EE211 /* AwaraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwaraApp.swift; sourceTree = "<group>"; };
 		F3E4531C26FD17C2008EE211 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,12 +62,16 @@
 		F3E4531926FD17C2008EE211 /* Awara */ = {
 			isa = PBXGroup;
 			children = (
+				F3E3E45826FE31C10048739C /* sound-chime.mp3 */,
 				F3E4531A26FD17C2008EE211 /* AwaraApp.swift */,
 				F3E4531C26FD17C2008EE211 /* ContentView.swift */,
 				F3E4531E26FD17C3008EE211 /* Assets.xcassets */,
 				F3E4532326FD17C3008EE211 /* Info.plist */,
 				F3E4532026FD17C3008EE211 /* Preview Content */,
 				F3E4532926FD2389008EE211 /* CardView.swift */,
+				F3E3E45426FE270D0048739C /* CardModel.swift */,
+				F3E3E45626FE29320048739C /* CardData.swift */,
+				F3E3E45A26FE31F10048739C /* PlaySound.swift */,
 			);
 			path = Awara;
 			sourceTree = "<group>";
@@ -130,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3E4532226FD17C3008EE211 /* Preview Assets.xcassets in Resources */,
+				F3E3E45926FE31C10048739C /* sound-chime.mp3 in Resources */,
 				F3E4531F26FD17C3008EE211 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,7 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E3E45726FE29320048739C /* CardData.swift in Sources */,
+				F3E3E45B26FE31F10048739C /* PlaySound.swift in Sources */,
 				F3E4531D26FD17C2008EE211 /* ContentView.swift in Sources */,
+				F3E3E45526FE270D0048739C /* CardModel.swift in Sources */,
 				F3E4532A26FD2389008EE211 /* CardView.swift in Sources */,
 				F3E4531B26FD17C2008EE211 /* AwaraApp.swift in Sources */,
 			);
