@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3405CA727020E2B00CABD18 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3405CA627020E2B00CABD18 /* Stickers.xcassets */; };
+		F3405CAB27020E2B00CABD18 /* stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F3405CA427020E2A00CABD18 /* stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F3E3E45526FE270D0048739C /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3E45426FE270D0048739C /* CardModel.swift */; };
 		F3E3E45726FE29320048739C /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3E45626FE29320048739C /* CardData.swift */; };
 		F3E3E45926FE31C10048739C /* sound-chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3E3E45826FE31C10048739C /* sound-chime.mp3 */; };
@@ -18,7 +20,34 @@
 		F3E4532A26FD2389008EE211 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E4532926FD2389008EE211 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F3405CA927020E2B00CABD18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3E4530F26FD17C2008EE211 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3405CA327020E2A00CABD18;
+			remoteInfo = stickers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3405CAC27020E2B00CABD18 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F3405CAB27020E2B00CABD18 /* stickers.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F3405CA427020E2A00CABD18 /* stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3405CA627020E2B00CABD18 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		F3405CA827020E2B00CABD18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3E3E45426FE270D0048739C /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		F3E3E45626FE29320048739C /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
 		F3E3E45826FE31C10048739C /* sound-chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-chime.mp3"; sourceTree = "<group>"; };
@@ -43,10 +72,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3405CA527020E2A00CABD18 /* stickers */ = {
+			isa = PBXGroup;
+			children = (
+				F3405CA627020E2B00CABD18 /* Stickers.xcassets */,
+				F3405CA827020E2B00CABD18 /* Info.plist */,
+			);
+			path = stickers;
+			sourceTree = "<group>";
+		};
 		F3E4530E26FD17C2008EE211 = {
 			isa = PBXGroup;
 			children = (
 				F3E4531926FD17C2008EE211 /* Awara */,
+				F3405CA527020E2A00CABD18 /* stickers */,
 				F3E4531826FD17C2008EE211 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				F3E4531726FD17C2008EE211 /* Awara.app */,
+				F3405CA427020E2A00CABD18 /* stickers.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +127,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F3405CA327020E2A00CABD18 /* stickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3405CAF27020E2B00CABD18 /* Build configuration list for PBXNativeTarget "stickers" */;
+			buildPhases = (
+				F3405CA227020E2A00CABD18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = stickers;
+			productName = stickers;
+			productReference = F3405CA427020E2A00CABD18 /* stickers.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
 		F3E4531626FD17C2008EE211 /* Awara */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3E4532626FD17C3008EE211 /* Build configuration list for PBXNativeTarget "Awara" */;
@@ -94,10 +149,12 @@
 				F3E4531326FD17C2008EE211 /* Sources */,
 				F3E4531426FD17C2008EE211 /* Frameworks */,
 				F3E4531526FD17C2008EE211 /* Resources */,
+				F3405CAC27020E2B00CABD18 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F3405CAA27020E2B00CABD18 /* PBXTargetDependency */,
 			);
 			name = Awara;
 			productName = Awara;
@@ -113,6 +170,9 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					F3405CA327020E2A00CABD18 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
 					F3E4531626FD17C2008EE211 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -132,11 +192,20 @@
 			projectRoot = "";
 			targets = (
 				F3E4531626FD17C2008EE211 /* Awara */,
+				F3405CA327020E2A00CABD18 /* stickers */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F3405CA227020E2A00CABD18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3405CA727020E2B00CABD18 /* Stickers.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3E4531526FD17C2008EE211 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -165,7 +234,43 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F3405CAA27020E2B00CABD18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3405CA327020E2A00CABD18 /* stickers */;
+			targetProxy = F3405CA927020E2B00CABD18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		F3405CAD27020E2B00CABD18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = stickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.erasmojf.Awara.stickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3405CAE27020E2B00CABD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = stickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.erasmojf.Awara.stickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		F3E4532426FD17C3008EE211 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -327,6 +432,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F3405CAF27020E2B00CABD18 /* Build configuration list for PBXNativeTarget "stickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3405CAD27020E2B00CABD18 /* Debug */,
+				F3405CAE27020E2B00CABD18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F3E4531226FD17C2008EE211 /* Build configuration list for PBXProject "Awara" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
